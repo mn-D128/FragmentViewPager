@@ -56,7 +56,7 @@ class MainFragment : Fragment() {
     override fun setUserVisibleHint(isVisibleToUser: Boolean) {
         super.setUserVisibleHint(isVisibleToUser)
 
-        if (isResumed) {
+        if (isResumed && isVisibleToUser) {
             // TODO: オンスクリーン
             Log.d("","オンスクリーン")
         }
